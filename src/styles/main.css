@@ -23,8 +23,8 @@ ul.nav-header li {
 	font-family: var(--font-inter-medium);
 	font-size: 14px;
 	color: var(--font-blue);
-  padding: 10px 12px;
-  border-radius: 8px;
+	padding: 10px 12px;
+	border-radius: 8px;
 }
 
 header {
@@ -34,35 +34,35 @@ header {
 }
 
 ul.nav-header li.active {
-  color: var(--secondary-initial);
-  position: relative;
+	color: var(--secondary-initial);
+	position: relative;
 }
 
 ul.nav-header li.active::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  bottom: -4px;
-  left: 12px;
-  width: 72%;
-  height: 2px;
-  background-color: var(--secondary-initial);
+	content: "";
+	display: inline-block;
+	position: absolute;
+	bottom: -4px;
+	left: 12px;
+	width: 72%;
+	height: 2px;
+	background-color: var(--secondary-initial);
 }
 
 ul.nav-header li:not(.active):hover {
-  background-color: var(--secondary-hover);
-  color: var(--font-white);  
-  transition: all 0.3s ease;
+	background-color: var(--secondary-hover);
+	color: var(--font-white);
+	transition: all 0.3s ease;
 }
 
 .catalog::after {
-	content: '';
+	content: "";
 	display: inline-block;
-  width: 17px;
-  height: 16px;
-  background-image: url(/src/assets/images/chevron-down.png);
-  margin-left: 14px;
-  vertical-align: middle;
+	width: 17px;
+	height: 16px;
+	background-image: url(/src/assets/images/chevron-down.png);
+	margin-left: 14px;
+	vertical-align: middle;
 }
 
 .header-right {
@@ -71,28 +71,111 @@ ul.nav-header li:not(.active):hover {
 }
 
 .basket {
-  margin-right: 8px;
+	margin-right: 8px;
 }
 
 button {
-  border: none;
-  border-radius: 8px;
-  padding: 10px 12px;
-  color: var(--font-white);
-  font-family: var(font-inter-semi-bold);
-  font-size: 15px;
+	border: none;
+	border-radius: 8px;
+	padding: 10px 12px;
+	color: var(--font-white);
+	font-family: var(font-inter-semi-bold);
+	font-size: 15px;
+  cursor: pointer;
 }
 
 .callback {
-  cursor: pointer;
-  background-color: var(--primary-initial);
-  transition: all 0.3s ease;
+	cursor: pointer;
+	background-color: var(--primary-initial);
+	transition: all 0.3s ease;
 }
 
 .callback:hover {
-  background-color: var(--primary-hover);
+	background-color: var(--primary-hover);
 }
 
 .callback:active {
-  background-color: var(--primary-pressed);
+	background-color: var(--primary-pressed);
+}
+
+.callback-form {
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: var(--background-color-transparent);
+	align-items: center;
+	justify-content: center;
+}
+
+.form-wrapper {
+	position: relative;
+	border-radius: 20px;
+	padding: 40px;
+	height: 360px;
+	width: 417px;
+	background-color: white;
+}
+
+.form-wrapper img {
+	cursor: pointer;
+}
+
+.close {
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	width: 40px;
+	height: 40px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.field-input {
+	display: flex;
+	flex-direction: column;
+}
+
+form label {
+  margin-bottom: 4px;
+}
+
+form input {
+  border: 1px solid var(--background-color-input-border);
+  border-radius: 14px;
+  padding: 9px 16px;
+  margin-bottom: 12px;
+}
+
+form input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--font-placeholder);
+}
+
+.form-button {
+  background-color: var(--primary-initial);
+}
+
+.form-wrapper p {
+  font-family: var(--font-inter-regular);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+form img {
+  margin-bottom: 4px;
+}
+
+p span {
+  cursor: pointer;
+  color: var(--secondary-initial);
 }

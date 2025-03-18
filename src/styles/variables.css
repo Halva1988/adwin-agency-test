@@ -8,6 +8,9 @@
   --secondary-hover: #439FFF;
   --secondary-pressed: #0763CD;
 
+  --background-color-transparent: #00000020;
+  --background-color-input-border: #F1F1F1;
+
   /* Fonts */
   --font-inter-regular: 'Inter', sans-serif;
   --font-inter-medium: 'Inter', sans-serif;
@@ -19,4 +22,5 @@
   --font-blue: #1F2937;
   --font-black: #1E1E1E;
   --font-white: #FFFFFF;
+  --font-placeholder: #A7A7A7;
 }

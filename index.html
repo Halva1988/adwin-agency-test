@@ -1,35 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jura:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/styles/main.css">
-    <title>Duck Shop</title>
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <img src="/src/assets/images/Logo.png" alt="logo">
-      </div>
-      <nav class="nav">
-        <ul class="nav-header">
-          <li class="active">Главная</li>
-          <li class="catalog">Каталог</li>
-          <li>Блог</li>
-          <li>Отзывы</li>
-          <li>Контакты</li>
-        </ul>
-      </nav>
-      <div class="header-right">
-        <div class="basket">
-          <img src="/src/assets/images/_button-icon-small.png" alt="basket">
-        </div>
-        <button class="callback">Заказать обратный звонок</button>
-      </div>
-    </header>
-    <main></main>
-    <footer></footer>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Jura:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/src/styles/main.css" />
+		<title>Duck Shop</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="logo">
+				<img src="/src/assets/images/Logo.png" alt="logo" />
+			</div>
+			<nav class="nav">
+				<ul class="nav-header">
+					<li class="active">Главная</li>
+					<li class="catalog">Каталог</li>
+					<li>Блог</li>
+					<li>Отзывы</li>
+					<li>Контакты</li>
+				</ul>
+			</nav>
+			<div class="header-right">
+				<div class="basket">
+					<img src="/src/assets/images/_button-icon-small.png" alt="basket" />
+				</div>
+				<button class="callback">Заказать обратный звонок</button>
+			</div>
+		</header>
+		<main>
+			<div class="callback-form">
+				<div class="form-wrapper">
+					<img
+						src="/src/assets/images/icon-button.png"
+						alt="close"
+						class="close"
+					/>
+					<form class="form">
+						<div class="field-input">
+							<label for="name"
+								><img
+									src="/src/assets/images/name.png"
+									alt="name"
+									class="name"
+								/>
+							</label>
+							<input
+								type="text"
+								name="name"
+								placeholder="Введите ваше имя"
+								required
+							/>
+						</div>
+						<div class="field-input">
+							<label for="phone"
+								><img
+									src="/src/assets/images/phone.png"
+									alt="phone"
+									class="phone"
+								/>
+							</label>
+							<input
+								type="tel"
+								name="phone"
+								placeholder="+7 000 000 00 00"
+								required
+							/>
+						</div>
+						<button class="form-button">Отправить</button>
+					</form>
+					<p>
+						Нажимая кнопку “Отправить”, вы соглашаетесь с
+						<span>политикой конфиденциальности</span> и
+						<span>договором оферты</span>
+					</p>
+				</div>
+			</div>
+		</main>
+		<footer></footer>
+		<script type="module" src="/src/main.js"></script>
+	</body>
 </html>
