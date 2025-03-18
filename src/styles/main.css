@@ -6,6 +6,13 @@
 	box-sizing: border-box;
 }
 
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	flex: 1;
+}
+
 .wrapper {
 	margin: 0 auto;
 	display: flex;
@@ -247,4 +254,34 @@ p span {
 	position: absolute;
 	top: 215px;
 	left: 266px;
+}
+
+/* Footer */
+
+footer {
+	height: 32px;
+	margin-top: auto;
+	display: flex;
+}
+
+footer ul li {
+	margin-right: 38px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	padding: 6px 6px;
+	border-radius: 8px;
+}
+
+footer ul li:hover {
+	background-color: var(--secondary-hover);
+	color: var(--font-white);
+}
+
+footer li::before {
+	content: "";
+	display: inline-block;
+	width: 14px;
+	height: 11px;
+	background-image: url(/src/assets/images/shape.png);
+	margin-right: 17px;
 }
