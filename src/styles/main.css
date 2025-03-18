@@ -1,17 +1,98 @@
-:root {
-  /* Colors */
-  --primary-initial: #EAB308;
-  --primary-hover: #FEC71C;
-  --primary-pressed: #CC9500;
+@import "./variables.css";
 
-  --secondary-initial: #2581EB;
-  --secondary-hover: #439FFF;
-  --secondary-pressed: #0763CD;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-  /* Fonts */
-  --font-inter-regular: 'Inter', sans-serif;
-  --font-inter-medium: 'Inter', sans-serif;
-  --font-inter-semi-bold: 'Inter', sans-serif;
-  --font-inter-bold: 'Inter', sans-serif;
-  --font-jura-bold: 'Jura', sans-serif;
+body {
+	padding: 16px;
+}
+
+ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul.nav-header li {
+	margin-right: 8px;
+	cursor: pointer;
+	font-family: var(--font-inter-medium);
+	font-size: 14px;
+	color: var(--font-blue);
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+ul.nav-header li.active {
+  color: var(--secondary-initial);
+  position: relative;
+}
+
+ul.nav-header li.active::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  bottom: -4px;
+  left: 12px;
+  width: 72%;
+  height: 2px;
+  background-color: var(--secondary-initial);
+}
+
+ul.nav-header li:not(.active):hover {
+  background-color: var(--secondary-hover);
+  color: var(--font-white);  
+  transition: all 0.3s ease;
+}
+
+.catalog::after {
+	content: '';
+	display: inline-block;
+  width: 17px;
+  height: 16px;
+  background-image: url(/src/assets/images/chevron-down.png);
+  margin-left: 14px;
+  vertical-align: middle;
+}
+
+.header-right {
+	display: flex;
+	justify-content: space-between;
+}
+
+.basket {
+  margin-right: 8px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: var(--font-white);
+  font-family: var(font-inter-semi-bold);
+  font-size: 15px;
+}
+
+.callback {
+  cursor: pointer;
+  background-color: var(--primary-initial);
+  transition: all 0.3s ease;
+}
+
+.callback:hover {
+  background-color: var(--primary-hover);
+}
+
+.callback:active {
+  background-color: var(--primary-pressed);
 }

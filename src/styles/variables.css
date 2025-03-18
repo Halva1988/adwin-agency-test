@@ -1,0 +1,22 @@
+:root {
+  /* Colors */
+  --primary-initial: #EAB308;
+  --primary-hover: #FEC71C;
+  --primary-pressed: #CC9500;
+
+  --secondary-initial: #2581EB;
+  --secondary-hover: #439FFF;
+  --secondary-pressed: #0763CD;
+
+  /* Fonts */
+  --font-inter-regular: 'Inter', sans-serif;
+  --font-inter-medium: 'Inter', sans-serif;
+  --font-inter-semi-bold: 'Inter', sans-serif;
+  --font-inter-bold: 'Inter', sans-serif;
+  --font-jura-bold: 'Jura', sans-serif;
+
+  /* Font color */
+  --font-blue: #1F2937;
+  --font-black: #1E1E1E;
+  --font-white: #FFFFFF;
+}
