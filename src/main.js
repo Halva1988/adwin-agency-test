@@ -6,7 +6,6 @@ const menu = document.querySelector(".menu-button");
 
 const toggleMenu = () => {
   nav.classList.toggle("show");
-  
 }
 
 const openForm = () => {
