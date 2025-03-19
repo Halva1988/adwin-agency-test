@@ -3,7 +3,7 @@ import path from "path";
 
 export default defineConfig({
 	root: __dirname,
-	base: "./",
+	base: "/adwin-agency-test/",
 	build: {
 		outDir: path.resolve(__dirname, "dist"),
 		rollupOptions: {
