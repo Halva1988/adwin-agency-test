@@ -326,10 +326,6 @@ footer li::before {
 		overflow: hidden;
 	}
 
-	.wrapper {
-		max-width: 1279px;
-	}
-
 	.header-nav {
 		display: none;
 	}
@@ -381,5 +377,61 @@ footer li::before {
 
 	footer ul li {
 		margin-right: 24px;
+	}
+}
+
+@media screen and (max-width: 959px) {
+	.basket {
+		margin-right: 7px;
+	}
+
+	.callback {
+		display: none;
+	}
+
+	.menu-button {
+		margin-left: 7px;
+	}
+
+	.title {
+		font-size: 92px;
+		line-height: 80%;
+	}
+
+	.left {
+		top: -48px;
+	}
+
+	.right {
+		top: 33px;
+	}
+
+	.lookAtDucks {
+		top: 144px;
+	}
+
+	.img-container {
+		top: 185px;
+		left: calc(100vw - 835px);
+	}
+
+	.duck {
+		width: 343px;
+	}
+
+	.kria {
+		width: 64px;
+		top: 35px;
+		left: 615px;
+	}
+
+	footer ul {
+		position: absolute;
+		bottom: 102px;
+		left: 20px;
+		height: 300px;
+		align-items: flex-start;
+		flex-direction: column;
+		justify-content: space-evenly;
 	}
 }
