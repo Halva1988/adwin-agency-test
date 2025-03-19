@@ -90,10 +90,28 @@ ul.nav-header li:not(.active):hover {
 .header-right {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .basket {
-	margin-right: 8px;
+	cursor: pointer;
+	width: 38px;
+	height: 38px;
+	border-radius: 8px;
+	background-image: url(/src/assets/images/_button-icon-small.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 20px;
+}
+
+.basket:hover {
+	background-image: url(/src/assets/images/shopping-basket.png);
+	border: 1px solid var(--secondary-initial);
+}
+
+.basket:active {
+	background-image: url(/src/assets/images/shopping-basket.png);
+	border: 1px solid var(--secondary-pressed);
 }
 
 .callback {
@@ -108,6 +126,19 @@ ul.nav-header li:not(.active):hover {
 
 .callback:active {
 	background-color: var(--primary-pressed);
+}
+
+.menu-button {
+	display: none;
+	cursor: pointer;
+	margin-left: 21px;
+	width: 38px;
+	height: 38px;
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 16px;
+	transition: all 0.3s ease;
 }
 
 /* Form */
@@ -244,9 +275,13 @@ p span {
 	background-color: var(--secondary-pressed);
 }
 
+.img-container {
+	position: relative;
+	top: -170px;
+}
+
 .duck {
 	position: absolute;
-	top: 0;
 	left: 314px;
 }
 
@@ -259,7 +294,7 @@ p span {
 /* Footer */
 
 footer {
-	height: 32px;
+	height: 64px;
 	margin-top: auto;
 	display: flex;
 }
@@ -284,4 +319,67 @@ footer li::before {
 	height: 11px;
 	background-image: url(/src/assets/images/shape.png);
 	margin-right: 17px;
+}
+
+@media screen and (max-width: 1279px) {
+	body {
+		overflow: hidden;
+	}
+
+	.wrapper {
+		max-width: 1279px;
+	}
+
+	.header-nav {
+		display: none;
+	}
+
+	.menu-button {
+		display: block;
+		border: 1px solid var(--primary-initial-menu-button);
+		background-image: url(/src/assets/images/align-justify-init&hover.png);
+	}
+
+	.menu-button:hover {
+		background-image: url(/src/assets/images/align-justify-init&hover.png);
+		background-color: var(--primary-initial-menu-button);
+	}
+
+	.menu-button:active {
+		background-image: url(/src/assets/images/align-justify-pressed.png);
+		background-color: var(--primary-pressed);
+	}
+
+	.left {
+		top: -60px;
+	}
+
+	.right {
+		left: 0;
+		top: 60px;
+	}
+
+	.lookAtDucks {
+		left: 0;
+		top: 243px;
+	}
+
+	.img-container {
+		left: calc(100vw - 960px);
+	}
+
+	.duck {
+		width: 577px;
+		top: -90px;
+		left: 635px;
+	}
+
+	.kria {
+		left: 583px;
+		top: 120px;
+	}
+
+	footer ul li {
+		margin-right: 24px;
+	}
 }
