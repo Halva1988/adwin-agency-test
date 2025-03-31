@@ -16,6 +16,20 @@ const closeForm = () => {
   form.style.display = "none";
 };
 
+const handleOutsideClick = (event) => {
+	if (form.contains(event.target) && event.target === form) {
+		closeForm();
+	}
+};
+
+const handleEscKey = (event) => {
+	if (event.key === "Escape") {
+		closeForm();
+	}
+};
+
 callbackBtn.addEventListener("click", openForm);
 close.addEventListener("click", closeForm);
 menu.addEventListener("click", toggleMenu);
+document.addEventListener("click", handleOutsideClick);
+document.addEventListener("keydown", handleEscKey);
